@@ -1,0 +1,26 @@
+body {
+    background-color: #f4c5cd;
+}
+
+#logo {
+    width: 10%;
+    animation: .4s pop;
+    display: inline-block;
+}
+
+nav ul {
+    display: inline;
+    text-align: center;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(70%);
+    }
+    90% {
+        transform: scale(105%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
