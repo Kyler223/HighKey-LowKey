@@ -13,8 +13,9 @@ nav {
 }
 
 #logo {
-    width: 10%;
-    animation: .4s pop;
+    margin: 20px;
+    width: 120px;
+    animation: .35s pop;
 }
 
 nav ul {
@@ -26,9 +27,56 @@ nav ul {
     gap: 1.8rem;
 }
 
-nav ul  li{
+.navItem {
     padding-bottom: 10px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.borderBottom {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.borderBottom:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+#ourProducts {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.navItem:hover {
+    padding: 0 1px;
+    padding-bottom: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    font-size: 1rem;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdownItem {
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+    padding: 12px 0;
+    margin: 0;
+}
+
+.dropdownItem:hover {
+    font-size: 1.02rem;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.7);
 }
 
 @keyframes pop {

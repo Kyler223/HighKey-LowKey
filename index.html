@@ -10,9 +10,17 @@
     <nav>
     <img id="logo" src="plain-black-logo.png"/>
       <ul class="navigation">
-        <li>Home</li>
-        <li>Our Products</li>
-        <li>About Us</li>
+        <li class="navItem borderBottom">Home</li>
+        <div class="dropdown">
+          <span class="navItem" id="ourProducts">Our Products</span>
+          <div class="dropdown-content">
+            <p class="dropdownItem">Women's</p>
+            <p class="dropdownItem">Men's</p>
+            <p class="dropdownItem">Seasonal</p>
+            <p class="dropdownItem">Beauty</p>
+          </div>
+        </div>
+        <li class="navItem borderBottom">About Us</li>
       <ul>
     </nav>
   </body>
