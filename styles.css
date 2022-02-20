@@ -4,6 +4,8 @@ html {
 
 body {
     background-color: #f4c5cd;
+    margin: 0;
+    padding: 0;
 }
 
 nav {
@@ -14,7 +16,7 @@ nav {
 
 #logo {
     margin: 20px;
-    width: 120px;
+    width: 110px;
     animation: .35s pop;
 }
 
@@ -85,6 +87,27 @@ nav ul {
 .dropdownItem:hover {
     font-size: 1.02rem;
     border-bottom: 1px dashed rgba(0, 0, 0, 0.7);
+}
+
+#cart {
+    width: 30px;
+    height: 30px;
+    opacity: .8;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); 
+}
+
+#cart:hover {
+    transform: scale(104%);
+    opacity: 1;
+}
+
+section {
+    width: 100%;
+    position: absolute;
+}
+
+section img {
+    width: 100%;
 }
 
 @keyframes pop {
