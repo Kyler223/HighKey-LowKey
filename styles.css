@@ -12,11 +12,11 @@ html {
     }
 
     .product {
-        width: 80%;
-        max-width: 1000px;
+        width: 88%;
         background-color: white;
         border-radius: 15px;
-        padding: 5px 20px;
+        padding: 0 20px;
+        padding-bottom: 35px;
         overflow: hidden;
     }
 }
@@ -25,7 +25,7 @@ html {
     .product {
         min-width: 300px;
         min-height: 370px;
-        width: 20%;
+        width: 25%;
         max-width: 1000px;
         background-color: white;
         border-radius: 15px;
@@ -152,7 +152,7 @@ nav ul {
     object-fit: cover;
     width: 100%;
     min-height: 55vh;
-    max-height: 75vh;
+    max-height: 65vh;
 }
 
 .featured-section {
@@ -173,17 +173,6 @@ nav ul {
     width: 100%;
 }
 
-/* .product {
-    min-width: 300px;
-    min-height: 370px;
-    width: 20%;
-    max-width: 1000px;
-    background-color: white;
-    border-radius: 15px;
-    padding: 5px 20px;
-    overflow: hidden;
-} */
-
 .product h3 {
     padding: 0px 15px;
     font-family: "lemon milk regular";
@@ -195,7 +184,7 @@ nav ul {
 }
 
 .center-img {
-    width: 100%;
+    width: 95%;
     object-fit: fill;
     margin: auto;
     display: flex;
@@ -203,7 +192,7 @@ nav ul {
 }
 
 .product img {
-    max-width: 95%;
+    max-width: 100%;
     object-fit: fill;
     margin: auto;
 }
