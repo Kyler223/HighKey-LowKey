@@ -2,6 +2,38 @@ html {
     font-size: 14px;
 }
 
+@media screen and (max-aspect-ratio: 14/16) {
+    html {
+        font-size: 20px;
+    }
+
+    body {
+        background-color: blue;
+    }
+
+    .product {
+        width: 80%;
+        max-width: 1000px;
+        background-color: white;
+        border-radius: 15px;
+        padding: 5px 20px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-aspect-ratio: 14/16) {
+    .product {
+        min-width: 300px;
+        min-height: 370px;
+        width: 20%;
+        max-width: 1000px;
+        background-color: white;
+        border-radius: 15px;
+        padding: 5px 20px;
+        overflow: hidden;
+    }
+}
+
 body {
     background-color: #f4c5cd;
     margin: 0;
@@ -119,6 +151,7 @@ nav ul {
 .banner img {
     object-fit: cover;
     width: 100%;
+    min-height: 55vh;
     max-height: 75vh;
 }
 
@@ -140,7 +173,7 @@ nav ul {
     width: 100%;
 }
 
-.product {
+/* .product {
     min-width: 300px;
     min-height: 370px;
     width: 20%;
@@ -149,7 +182,7 @@ nav ul {
     border-radius: 15px;
     padding: 5px 20px;
     overflow: hidden;
-}
+} */
 
 .product h3 {
     padding: 0px 15px;
