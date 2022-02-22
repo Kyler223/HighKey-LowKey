@@ -160,6 +160,7 @@ nav ul {
 }
 
 .featured-section h2 {
+    margin-top: 50px;
     font-family: "lemon milk regular";
     font-size: 3rem;
     text-align: center;
@@ -181,6 +182,16 @@ nav ul {
 
 .product p {
     padding: 0px 15px;
+}
+
+.product:hover {
+    transform: scale(101%);
+    transition-duration: .2s;
+}
+
+.product {
+    transition-duration: .2s;
+    transition-property: scale;
 }
 
 .center-img {
