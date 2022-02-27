@@ -173,6 +173,7 @@ nav ul {
     flex-wrap: wrap;
     gap: 35px;
     width: 100%;
+    margin-bottom: 100px;
 }
 
 .product h3 {
