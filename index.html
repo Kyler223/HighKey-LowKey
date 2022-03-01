@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>HighKey|LowKey</title>
+    <!-- main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <!-- fontawesome -->
+    <link rel="stylesheet" type="text/css" href="/fontawesome-6.0/css/all.css">
   </head>
   <body>
     <header>
@@ -42,12 +46,16 @@
           <div class="product">
             <h3>Product #2</h3>
             <p>Product description</p>
+            <div class="center-img">
             <img src="images/pexels-evg-kowalievska-4088468.jpg">
+            </div>
           </div>
           <div class="product">
             <h3>Product #3</h3>
             <p>Product description</p>
+            <div class="center-img">
             <img src="images/pexels-bankole-adeoni-7206287.jpg">
+            </div>
           </div>
 
           <div class="product">
@@ -60,34 +68,59 @@
           <div class="product">
             <h3>Product #5</h3>
             <p>Product description</p>
+            <div class="center-img">
             <img src="images/pexels-evg-kowalievska-4088468.jpg">
+            </div>
           </div>
           <div class="product">
             <h3>Product #6</h3>
             <p>Product description</p>
+            <div class="center-img">
             <img src="images/pexels-bankole-adeoni-7206287.jpg">
           </div>
         </div>
     </section>
+
+    <section class="mid-banner">
+      <h3 class="mid-banner-text">Earrings <span class="red">15% off!</span></h3>
+      <div class="mid-banner-cover">
+      </div>
+      <img src="images/pexels-vinicius-wiesehofer-1090387.jpg">
+    </section>
+
+    <footer>
+      <div class="footer-customerSupport">
+        <h4>Customer Support</h4>
+        <p>Call: +1800-555-555</p>
+        <p>Email: support@example.com</p>
+      </div>
+      <div class="footer-socialMedia">
+        <h4>Social Media</h4>
+        <a href="https://github.com/Kyler223" target="_blank">
+        <i class="fa-brands fa-facebook-square fa-xl"></i>
+        <p class="footer-social-p">Facebook</p>
+        </a>
+        <br><br>
+        <a href="https://github.com/Kyler223" target="_blank">
+          <i class="fa-brands fa-twitter-square fa-xl"></i>
+          <p class="footer-social-p">Twitter</p>
+        </a>
+        <!-- <br><br>
+        <a href="https://github.com/Kyler223" target="_blank">
+          <i class="fa-brands fa-twitter-square fa-xl"></i>
+          <p class="footer-social-p">Twitter</p>
+        </a> -->
+      </div>
+      <div class="footer-locations">
+        <h4>Locations</h4>
+        <p>1234 Street Ave, City, State 12345</p>
+        <!-- copied link of google maps location with the directions open and the starting point empty (google will remember this with the link) -->
+        <!-- I did this instead of an interactive map because it costs money for having a google maps api key -->
+        <a target="_blank" href="https://www.google.com/maps/dir//NK+Stockholm,+Hamngatan+18-20,+111+47+Stockholm,+Sweden/@59.3331042,18.0685776,18.46z/data=!4m16!1m6!3m5!1s0x465f9d5c19adfc51:0x71d7e22255fa1cde!2sNK+Stockholm!8m2!3d59.3331523!4d18.0691707!4m8!1m0!1m5!1m1!1s0x465f9d5c19adfc51:0x71d7e22255fa1cde!2m2!1d18.0691707!2d59.3331523!3e4"><p>Directions</p></a>
+      </div>
+      <div class="break"></div>
+      <img id="footerLogo" src="images/plain-white-logo.png">
+    </footer>
   </main>
-  <footer>
-    <div class="footer-customerSupport">
-      <h4>Customer Support</h4>
-      <p>Call: +1800-555-555</p>
-      <p>Email: support@example.com</p>
-    </div>
-    <div class="footer-socialMedia">
-      <h4>Social Media</h4>
-    </div>
-    <div class="footer-locations">
-      <h4>Locations</h4>
-      <p>1234 Street Ave, City, State 12345</p>
-      <!-- copied link of google maps location with the directions open and the starting point empty (google will remember this with the link) -->
-      <!-- I did this instead of an interactive map because it costs money for having a google maps api key -->
-      <a target="_blank" href="https://www.google.com/maps/dir//NK+Stockholm,+Hamngatan+18-20,+111+47+Stockholm,+Sweden/@59.3331042,18.0685776,18.46z/data=!4m16!1m6!3m5!1s0x465f9d5c19adfc51:0x71d7e22255fa1cde!2sNK+Stockholm!8m2!3d59.3331523!4d18.0691707!4m8!1m0!1m5!1m1!1s0x465f9d5c19adfc51:0x71d7e22255fa1cde!2m2!1d18.0691707!2d59.3331523!3e4"><p>Directions</p></a>
-    </div>
-    <div class="break"></div>
-    <img id="footerLogo" src="images/plain-white-logo.png">
-  </footer>
   </body>
 </html>
