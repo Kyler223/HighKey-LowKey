@@ -2,38 +2,6 @@ html {
     font-size: 14px;
 }
 
-@media screen and (max-aspect-ratio: 14/16) {
-    html {
-        font-size: 20px;
-    }
-
-    /* body {
-        background-color: blue;
-    } */
-
-    .product {
-        width: 88%;
-        background-color: white;
-        border-radius: 15px;
-        padding: 0 20px;
-        padding-bottom: 35px;
-        overflow: hidden;
-    }
-}
-
-@media screen and (min-aspect-ratio: 14/16) {
-    .product {
-        min-width: 300px;
-        min-height: 370px;
-        width: 19%;
-        max-width: 1000px;
-        background-color: white;
-        border-radius: 15px;
-        padding: 5px 20px;
-        overflow: hidden;
-    }
-}
-
 body {
     background-color: #f4c5cd;
     margin: 0;
@@ -218,25 +186,14 @@ nav ul {
     margin: 0 auto;
     overflow: hidden;
     height: 400px;
-    width: 1100px;
-    justify-content: flex-end;
+    width: 100%;
+    max-width: 1300px;
+    justify-content: center;
+    align-items: center;
 }
 
-/* .mid-banner-cover {
-    z-index: 10;
-    background-color: rgba(0, 0, 0, .6);
-    border-radius: 5px;
-    width: 35%;
-    height: 25%;
-    margin: 0 50px;
-    margin-top: 250px;
-} */
-
 .mid-banner-text {
-    word-wrap: break-word;
-    height: 8%;
-    margin: 0 40px;
-    margin-top: 190px;
+    margin-left: 39%;
     z-index: 10;
     border-radius: 5px;
     font-family: "lemon milk regular";
@@ -244,18 +201,19 @@ nav ul {
     color: white;
     padding: 30px;
     background-color: rgba(0, 0, 0, .8);
+    position: absolute;
 }
 
 .mid-banner img {
     display: flex;
     justify-content: center;
-    position: absolute;
     object-fit: cover;
     overflow: hidden;
-    height: 400px;
-    width: 1100px;
+    width: 100%;
+    margin: 0 100px;
 }
 
+/* for the span in the banner */
 .red {
     color: rgb(255, 20, 20);
 }
@@ -283,11 +241,15 @@ footer h4 {
 }
 
 /* .footer-customerSupport {
-    border: 1px solid blue;
+
 } */
 
 /* .footer-socialMedia {
-    border: 1px solid blue;
+
+} */
+
+/* .footer-locations {
+
 } */
 
 
@@ -296,11 +258,6 @@ footer h4 {
     height: 0;
 }
 
-#footerLogo {
-    width: 35px;
-    align-self: flex-end;
-    padding-bottom: 30px;
-}
 
 a {
     text-decoration: none;
@@ -316,6 +273,55 @@ footer p {
     font-size: 1.15rem;
 }
 
+#footerLogo {
+    width: 35px;
+    align-self: flex-end;
+    padding: 40px 0;
+}
+
+/* phones */
+@media screen and (max-width: 1450px){
+    html {
+        font-size: 20px;
+    }
+
+    .product {
+        width: 88%;
+        background-color: white;
+        border-radius: 15px;
+        padding: 0 20px;
+        padding-bottom: 35px;
+        overflow: hidden;
+    }
+
+    .mid-banner {
+        width: 88%;
+    }
+
+    .mid-banner-text {
+        font-size: 1.5rem;
+    }
+
+    .mid-banner img {
+        margin: 0;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1450px){
+    .product {
+        min-width: 300px;
+        min-height: 370px;
+        width: 19%;
+        max-width: 1000px;
+        background-color: white;
+        border-radius: 15px;
+        padding: 5px 20px;
+        overflow: hidden;
+    }
+}
+
+/* animations */
 @keyframes pop {
     0% {
         transform: scale(70%);
@@ -328,12 +334,13 @@ footer p {
     }
 }
 
+/* fonts */
 @font-face {
     font-family: "lemon milk regular";
-    src: url("/Fonts/lemon_milk_font/LEMONMILK-Regular.otf") format("opentype"),
-         url("/Fonts/lemon_milk_font/LEMONMILK-Bold.otf") format("opentype"),
-         url("/Fonts/lemon_milk_font/LEMONMILK-Light.otf") format("opentype"),
-         url("/Fonts/lemon_milk_font/LEMONMILK-Medium.otf") format("opentype"),
-         url("/Fonts/lemon_milk_font/LEMONMILK-Regular.otf") format("opentype");
+    src: url("Fonts/lemon_milk_font/LEMONMILK-Regular.otf") format("opentype"),
+         url("Fonts/lemon_milk_font/LEMONMILK-Bold.otf") format("opentype"),
+         url("Fonts/lemon_milk_font/LEMONMILK-Light.otf") format("opentype"),
+         url("Fonts/lemon_milk_font/LEMONMILK-Medium.otf") format("opentype"),
+         url("Fonts/lemon_milk_font/LEMONMILK-Regular.otf") format("opentype");
   }
   
