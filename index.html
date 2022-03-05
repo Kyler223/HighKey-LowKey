@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest" crossorigin="use-credentials">
     <!-- fontawesome -->
-    <link rel="stylesheet" type="text/css" href="../fontawesome-6.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome-6.0/css/all.css">
   </head>
   <body>
     <header>
@@ -94,32 +94,34 @@
     <footer>
       <div class="footer-customerSupport">
         <h4>Customer Support</h4>
-        <p>Call: +1800-555-555</p>
-        <p>Email: support@example.com</p>
+        <a href="tel:+1800555555">
+          <p>Call: <span class="underline">+1800-555-555</span></p>
+        </a>
+        <a href = "mailto: support@example.com">
+          <p>Email: <span class="underline">support@example.com</span></p>
+        </a>
       </div>
       <div class="footer-socialMedia">
         <h4>Social Media</h4>
         <a href="https://github.com/Kyler223" target="_blank">
         <i class="fa-brands fa-facebook-square fa-xl"></i>
-        <p class="footer-social-p">Facebook</p>
+        <p class="footer-p-marginLeft">Facebook</p>
         </a>
         <br><br>
         <a href="https://github.com/Kyler223" target="_blank">
           <i class="fa-brands fa-twitter-square fa-xl"></i>
-          <p class="footer-social-p">Twitter</p>
+          <p class="footer-p-marginLeft">Twitter</p>
         </a>
-        <!-- <br><br>
-        <a href="https://github.com/Kyler223" target="_blank">
-          <i class="fa-brands fa-twitter-square fa-xl"></i>
-          <p class="footer-social-p">Twitter</p>
-        </a> -->
       </div>
       <div class="footer-locations">
         <h4>Locations</h4>
-        <p>1234 Street Ave, City, State 12345</p>
         <!-- copied link of google maps location with the directions open and the starting point empty (google will remember this with the link) -->
         <!-- I did this instead of an interactive map because it costs money for having a google maps api key -->
-        <a target="_blank" href="https://www.google.com/maps/dir//NK+Stockholm,+Hamngatan+18-20,+111+47+Stockholm,+Sweden/@59.3331042,18.0685776,18.46z/data=!4m16!1m6!3m5!1s0x465f9d5c19adfc51:0x71d7e22255fa1cde!2sNK+Stockholm!8m2!3d59.3331523!4d18.0691707!4m8!1m0!1m5!1m1!1s0x465f9d5c19adfc51:0x71d7e22255fa1cde!2m2!1d18.0691707!2d59.3331523!3e4"><p>Directions</p></a>
+        <a target="_blank" href="https://www.google.com/maps/dir//NK+Stockholm,+Hamngatan+18-20,+111+47+Stockholm,+Sweden/@59.3331042,18.0685776,18.46z/data=!4m16!1m6!3m5!1s0x465f9d5c19adfc51:0x71d7e22255fa1cde!2sNK+Stockholm!8m2!3d59.3331523!4d18.0691707!4m8!1m0!1m5!1m1!1s0x465f9d5c19adfc51:0x71d7e22255fa1cde!2m2!1d18.0691707!2d59.3331523!3e4">
+          <p>1234 Street Ave, City, State 12345</p>
+          <i class="fa-solid fa-location-dot fa-xl"></i>
+          <p class="underline footer-p-marginLeft">Directions</p>
+        </a>
       </div>
       <div class="break"></div>
       <img id="footerLogo" src="images/plain-white-logo.png">
