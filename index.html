@@ -21,7 +21,7 @@
           <ul class="navigation">
             <li class="navItem borderBottom hoverPadding">Home</li>
             <div class="dropdown hoverPadding">
-              <span class="navItem" id="ourProducts">Our Products</span>
+              <span class="navItem ourProducts">Our Products</span>
               <ul class="dropdown-content">
                 <li class="dropdownItem">Seasonal</li>
                 <li class="dropdownItem">Beauty</li>
@@ -30,7 +30,15 @@
               </ul>
             </div>
             <li class="navItem borderBottom hoverPadding">About Us</li>
-            <img id="cart" src="images/shopping-cart.png">
+            <img class="icons cart" src="images/shopping-cart.png">
+            <img class="icons" id="hamburger" onClick="hamburgerClick()" src="images/bars.svg">
+            <div class="dropdown">
+              <ul class="dropdown-content">
+                <li class="">Home</li>
+                <li class="">Our Products</li>
+                <li class="">About Us</li>
+              </ul>
+            </div>
           <ul>
         </nav>
       <section class="banner">

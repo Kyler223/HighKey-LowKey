@@ -1,3 +1,4 @@
+// reveal animation
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
   
@@ -13,5 +14,11 @@ function reveal() {
       }
     }
   }
-  
-  window.addEventListener("scroll", reveal);
+
+window.addEventListener("scroll", reveal);
+
+//hamburger on click
+function hamburgerClick() {
+  var hamburger = document.getElementById('hamburger');
+  alert("askjdhklasdf");
+}
