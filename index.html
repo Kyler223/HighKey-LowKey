@@ -18,27 +18,20 @@
     <header>
       <nav>
         <img id="logo" src="images/plain-black-logo.png"/>
-          <ul class="navigation">
-            <li class="navItem borderBottom hoverPadding">Home</li>
+          <ul id="navigation">
+            <li class="navItem borderBottom hoverPadding pointer">Home</li>
             <div class="dropdown hoverPadding">
-              <span class="navItem ourProducts">Our Products</span>
-              <ul class="dropdown-content">
+              <span class="navItem borderBottom pointer" id="ourProducts" onclick="productsClick()">Our Products</span>
+              <ul id="dropdown-content">
                 <li class="dropdownItem">Seasonal</li>
                 <li class="dropdownItem">Beauty</li>
                 <li class="dropdownItem">Women's</li>
                 <li class="dropdownItem">Men's</li>
               </ul>
             </div>
-            <li class="navItem borderBottom hoverPadding">About Us</li>
-            <img class="icons cart" src="images/shopping-cart.png">
-            <img class="icons" id="hamburger" onClick="hamburgerClick()" src="images/bars.svg">
-            <div class="dropdown">
-              <ul class="dropdown-content">
-                <li class="">Home</li>
-                <li class="">Our Products</li>
-                <li class="">About Us</li>
-              </ul>
-            </div>
+            <li class="navItem borderBottom hoverPadding pointer">About Us</li>
+            <img class="icons pointer" id="cart" src="images/shopping-cart.png">
+            <img class="icons pointer" id="hamburger" onclick="hamburgerClick()" src="images/bars.svg">
           <ul>
         </nav>
       <section class="banner">

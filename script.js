@@ -17,8 +17,31 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-//hamburger on click
+// hamburger on click
 function hamburgerClick() {
+  var navigation = document.getElementById('navigation');
+  var navItems = document.querySelectorAll('.navItem');
+  var cart = document.getElementById('cart');
   var hamburger = document.getElementById('hamburger');
-  alert("askjdhklasdf");
+
+  classToggler(navigation, 'navLinksDropdown');
+  classToggler(navigation, 'navigation-expand');
+  navItems.forEach(item => {classToggler(item, 'navItemDropdown')});
+  classToggler(cart, 'display-none');
+  classToggler(cart, 'cart-absolute');
+  classToggler(hamburger, 'left-right-center');
+}
+
+// click event for Our Products
+function productsClick() {
+  var dropdownContent = document.getElementById('dropdown-content');
+  var width = window.innerWidth;
+
+  if(width <= 800) {
+    classToggler(dropdownContent, 'display-block');
+  }
+}
+
+function classToggler(element, className) {
+  element.classList.toggle(className);
 }

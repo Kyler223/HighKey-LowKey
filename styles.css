@@ -33,7 +33,7 @@ nav {
     transform: scale(102%);
 }
 
-.navigation {
+#navigation {
     list-style-type: none; 
     display: inline-flex;
     font-size: 1.25rem;
@@ -55,14 +55,6 @@ nav {
     border-bottom: 1px solid rgba(0, 0, 0, 0.7);
 }
 
-.ourProducts {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-}
-
-.navItem:hover {
-    padding-bottom: 10px;
-}
-
 .hoverPadding:hover {
     padding: 0 1px;
 }
@@ -72,10 +64,9 @@ nav {
     display: inline-block;
 }
 
-.dropdown-content {
+#dropdown-content {
     list-style-type: none; 
     display: none;
-    position: absolute;
     background-color: white;
     width: 100%;
     font-size: 1rem;
@@ -84,10 +75,6 @@ nav {
     margin-top: 10px;
     z-index: 10;
     padding: 0;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
 }
 
 .dropdownItem {
@@ -101,13 +88,13 @@ nav {
     border-bottom: 1px dashed rgba(0, 0, 0, 0.7);
 }
 
-.cart {
+#cart {
     opacity: .8;
     margin-left: 10px;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); 
 }
 
-.cart:hover {
+#cart:hover {
     transform: scale(104%);
     opacity: 1;
 }
@@ -134,8 +121,6 @@ nav {
     margin: 30px auto;
     max-width: 1300px;
     padding: 0 30px;
-
-    /* margin: 0 auto; */
 }
 
 .featured-section h2 {
@@ -296,6 +281,23 @@ footer p {
     padding-bottom: 40px;
 }
 
+/* boilerplate classes */
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.left-right-center {
+    margin: 0 auto;
+}
+
 /* phones */
 @media screen and (max-width: 800px){
     :root {
@@ -306,12 +308,45 @@ footer p {
         font-size: 20px;
     }
 
+    .navigation-expand {
+        position: absolute;
+        top: 10vh;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, .4);
+    }
+
     .navItem {
         display: none;
     }
 
+    .navLinksDropdown {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        background-color: white;
+    }
+    
+    .navItemDropdown {      
+        display: block;
+        border: none;
+        line-height: 60px;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        border-bottom: 1px solid rgba(0, 0, 0, .4);
+    }
+
+    .cart-absolute {
+        display: block;
+        position: absolute;
+        top: -6.5vh;
+        right: 100px;
+    }
+
     #hamburger {
         display: block;
+        margin-top: 2px;
     }
 
     .product {
@@ -347,6 +382,22 @@ footer p {
 @media screen and (min-width: 801px){
     html {
         font-size: 16px;
+    }
+
+    .navItem:hover {
+        padding-bottom: 10px;
+    }    
+
+    #dropdown-content {
+        position: absolute;
+    }
+
+    .dropdown:hover #dropdown-content {
+        display: block;
+    }
+
+    #cart {
+        display: block;
     }
 
     #hamburger {
