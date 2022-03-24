@@ -1,10 +1,11 @@
 :root {
     --icon-size: 30px;
     --nav-height: 10vh;
+    --pink-backgrond: #f4c5cd; 
 }
 
 body {
-    background-color: #f4c5cd;
+    background-color: var(--pink-backgrond);
     margin: 0;
     padding: 0;
 }
@@ -17,7 +18,7 @@ nav {
     position: fixed;
     z-index: 10;
     top: 0;
-    background-color: #f4c5cd;
+    background-color: var(--pink-backgrond);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
     font-weight: 800;
 }
@@ -176,25 +177,13 @@ nav {
 .mid-banner {
     overflow: hidden;
     display: flex;
+    position: relative;
     margin: 0 auto;
     overflow: hidden;
     height: 400px;
     width: 100%;
-    max-width: 1300px;
     justify-content: center;
     align-items: center;
-}
-
-.mid-banner-text {
-    margin-left: 31.25rem;
-    z-index: 10;
-    border-radius: 5px;
-    font-family: "lemon milk regular";
-    font-size: 2rem;
-    color: white;
-    padding: 1.75rem;
-    background-color: rgba(0, 0, 0, .8);
-    position: absolute;
 }
 
 .mid-banner img {
@@ -202,13 +191,20 @@ nav {
     justify-content: center;
     object-fit: cover;
     overflow: hidden;
-    width: 100%;
-    margin: 0 100px;
+    max-width: 1300px;
+    width: 80%;
+    margin: 0 auto;
 }
 
-/* for the span in the banner */
-.red {
-    color: rgb(255, 20, 20);
+#earring-text {
+    left: 55%;
+    font-size: 1.4rem;
+    position: absolute;
+    border-radius: 5px;
+    font-family: "lemon milk regular";
+    color: white;
+    padding: 1.75rem;
+    background-color: rgba(0, 0, 0, .8);
 }
 
 footer {
@@ -238,24 +234,10 @@ footer h4 {
     text-decoration: underline;
 }
 
-/* .footer-customerSupport {
-
-} */
-
-/* .footer-socialMedia {
-
-} */
-
-/* .footer-locations {
-
-} */
-
-
 .break {
     flex-basis: 100%;
     height: 0;
 }
-
 
 a {
     text-decoration: none;
@@ -296,6 +278,10 @@ footer p {
 
 .left-right-center {
     margin: 0 auto;
+}
+
+.red {
+    color: rgb(255, 20, 20);
 }
 
 /* phones */
@@ -362,19 +348,9 @@ footer p {
         width: 88%;
     }
 
-    .mid-banner-text {
-        font-size: 1.5rem;
-    }
-
-    .mid-banner img {
-        margin: 0;
-    }
-}
-
-
-@media screen and (max-width: 1050px){
-    .mid-banner-text {
-        font-size: 1rem;
+    #earring-text {
+        padding: 1rem !important;
+        font-size: .6rem !important;
     }
 }
 
@@ -413,6 +389,40 @@ footer p {
         border-radius: 15px;
         padding: 5px 20px;
         overflow: hidden;
+    }
+}
+
+/* ad text */
+@media screen and (max-width: 950px){
+    #earring-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 850px){
+    #earring-text {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #earring-text {
+        padding: .7rem !important;
+        font-size: .5rem !important;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #earring-text {
+        padding: .6rem !important;
+        font-size: .4rem !important;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #earring-text {
+        padding: .5rem !important;
+        font-size: .3rem !important;
     }
 }
 
