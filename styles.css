@@ -25,8 +25,8 @@ nav {
 
 #logo {
     margin: 20px;
-    width: 100px;
-    height: 100px;
+    width: calc(var(--nav-height) * .70);
+    height: calc(var(--nav-height) * .70);
     animation: .35s pop;
 }
 
