@@ -455,10 +455,10 @@ footer p {
 /* fonts */
 @font-face {
     font-family: "lemon milk regular";
-    src: url("Fonts/lemon_milk_font/LEMONMILK-Regular.otf") format("opentype"),
-         url("Fonts/lemon_milk_font/LEMONMILK-Bold.otf") format("opentype"),
-         url("Fonts/lemon_milk_font/LEMONMILK-Light.otf") format("opentype"),
-         url("Fonts/lemon_milk_font/LEMONMILK-Medium.otf") format("opentype"),
-         url("Fonts/lemon_milk_font/LEMONMILK-Regular.otf") format("opentype");
-  }
+    src: url("/fonts/lemon_milk_font/LEMONMILK-Regular.otf") format("opentype"),
+         url("/fonts/lemon_milk_font/LEMONMILK-Bold.otf") format("opentype"),
+         url("/fonts/lemon_milk_font/LEMONMILK-Light.otf") format("opentype"),
+         url("/fonts/lemon_milk_font/LEMONMILK-Medium.otf") format("opentype"),
+         url("/fonts/lemon_milk_font/LEMONMILK-Regular.otf") format("opentype");
+}
   
