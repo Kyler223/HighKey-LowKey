@@ -1,0 +1,91 @@
+.banner {
+    margin-top: var(--nav-height);
+    width: 100%;
+    position: relative;
+}
+
+.banner img {
+    object-fit: cover;
+    width: 100%;
+    min-height: 55vh;
+    max-height: 65vh;
+}
+
+.mid-banner {
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid-banner img {
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    overflow: hidden;
+    max-width: 1300px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#earring-text {
+    left: 55%;
+    font-size: 1.4rem;
+    position: absolute;
+    border-radius: 5px;
+    font-family: "lemon-milk";
+    color: white;
+    padding: 1.75rem;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+/* phones */
+@media screen and (max-width: 800px){
+    .mid-banner {
+        width: 88%;
+    }
+
+    #earring-text {
+        padding: 1rem !important;
+        font-size: .6rem !important;
+    }
+}
+
+/* ad text */
+@media screen and (max-width: 950px){
+    #earring-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 850px){
+    #earring-text {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #earring-text {
+        padding: .7rem !important;
+        font-size: .5rem !important;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #earring-text {
+        padding: .6rem !important;
+        font-size: .4rem !important;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #earring-text {
+        padding: .5rem !important;
+        font-size: .3rem !important;
+    }
+}

@@ -4,6 +4,7 @@
     <title>HighKey|LowKey</title>
     <!-- stylesheets -->
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="home-styles.css">
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -17,40 +18,44 @@
   <body>
     <header>
       <nav>
-        <img id="logo" src="images/plain-black-logo.png"/>
-          <ul id="navigation">
-            <a href=""><li class="navItem borderBottom hoverPadding pointer">Home</li></a>
+        <a href=""><img id="logo" src="images/plain-black-logo.png"/></a>
+        <ul id="navigation">
+            <a href="">
+                <li class="navItem borderBottom hoverPadding pointer">Home</li>
+            </a>
             <div class="dropdown hoverPadding">
-              <a href="Our-Products">
+            <a href="Our-Products">
                 <span class="navItem borderBottom pointer" id="ourProducts" onclick="productsClick()">Our Products</span>
-              </a>
-              <ul id="dropdown-content">
+            </a>
+            <ul id="dropdown-content">
                 <li class="dropdownItem">Seasonal</li>
                 <li class="dropdownItem">Beauty</li>
                 <li class="dropdownItem">Women's</li>
                 <li class="dropdownItem">Men's</li>
-              </ul>
+            </ul>
             </div>
-            <li class="navItem borderBottom hoverPadding pointer">About Us</li>
+            <a href="About-Us">
+                <li class="navItem borderBottom hoverPadding pointer">About Us</li>
+            </a>
             <img class="icons pointer" id="cart" src="images/shopping-cart.png">
-            <img class="icons pointer" id="hamburger" onclick="hamburgerClick()" src="images/bars.svg">
-          <ul>
-        </nav>
-      <section class="banner">
-        <img src="images/pexels-elias-de-carvalho-1144834.jpg">
-      </section>
-    </header>
-  <main>
-    <section class="featured-section">
-      <h2>Featured Products</h2>
-        <div class="flex-products">
-          <div class="product reveal">
-            <h3>Product #1</h3>
-            <p>Product description</p>
-            <div class="center-img">
-              <img src="images/pexels-bankole-adeoni-7206287.jpg">
+            <img class="icons pointer" id="hamburger" src="images/bars.svg"onclick="hamburgerClick()">
+        </ul>
+      </nav>
+        <section class="banner">
+          <img src="images/pexels-elias-de-carvalho-1144834.jpg">
+        </section>
+      </header>
+      <main>
+        <section class="featured-section">
+          <h2>Featured Products</h2>
+          <div class="flex-products">
+            <div class="product reveal">
+              <h3>Product #1</h3>
+              <p>Product description</p>
+              <div class="center-img">
+                <img src="images/pexels-bankole-adeoni-7206287.jpg">
+              </div>
             </div>
-          </div>
           <div class="product reveal">
             <h3>Product #2</h3>
             <p>Product description</p>
@@ -65,7 +70,6 @@
             <img src="images/pexels-bankole-adeoni-7206287.jpg">
             </div>
           </div>
-
           <div class="product reveal">
             <h3>Product #4</h3>
             <p>Product description</p>
@@ -87,13 +91,12 @@
             <img src="images/pexels-bankole-adeoni-7206287.jpg">
           </div>
         </div>
-    </section>
-
-    <figure class="mid-banner">
-        <img src="images/pexels-vinicius-wiesehofer-1090387.jpg">
-        <figcaption id="earring-text">Earrings <span class="red">15% off!</figcaption>
-    </figure>
-
+      </section>
+      <figure class="mid-banner">
+          <img src="images/pexels-vinicius-wiesehofer-1090387.jpg">
+          <figcaption id="earring-text">Earrings <span class="red">15% off!</figcaption>
+      </figure>
+    </main>
     <footer>
       <div class="footer-customerSupport">
         <h4>Customer Support</h4>
@@ -129,6 +132,5 @@
       <div class="break"></div>
       <img id="footerLogo" src="images/plain-white-logo.png">
     </footer>
-  </main>
   </body>
 </html>
