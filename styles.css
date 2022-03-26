@@ -39,7 +39,7 @@ nav {
     display: inline-flex;
     font-size: 1.25rem;
     margin: auto 0;
-    font-family: "lemon milk regular";
+    font-family: "lemon-milk";
     gap: 1.8rem;
 }
 
@@ -126,7 +126,7 @@ nav {
 
 .featured-section h2 {
     margin-top: 50px;
-    font-family: "lemon milk regular";
+    font-family: "lemon-milk";
     font-size: 3rem;
     text-align: center;
 }
@@ -142,7 +142,7 @@ nav {
 
 .product h3 {
     padding: 0px 15px;
-    font-family: "lemon milk regular";
+    font-family: "lemon-milk";
     font-size: 1.6rem;
 }
 
@@ -201,7 +201,7 @@ nav {
     font-size: 1.4rem;
     position: absolute;
     border-radius: 5px;
-    font-family: "lemon milk regular";
+    font-family: "lemon-milk";
     color: white;
     padding: 1.75rem;
     background-color: rgba(0, 0, 0, .8);
@@ -454,11 +454,10 @@ footer p {
 
 /* fonts */
 @font-face {
-    font-family: "lemon milk regular";
+    font-family: "lemon-milk";
     src: url("/fonts/lemon_milk_font/LEMONMILK-Regular.otf") format("opentype"),
          url("/fonts/lemon_milk_font/LEMONMILK-Bold.otf") format("opentype"),
          url("/fonts/lemon_milk_font/LEMONMILK-Light.otf") format("opentype"),
-         url("/fonts/lemon_milk_font/LEMONMILK-Medium.otf") format("opentype"),
-         url("/fonts/lemon_milk_font/LEMONMILK-Regular.otf") format("opentype");
+         url("/fonts/lemon_milk_font/LEMONMILK-Medium.otf") format("opentype");
 }
   

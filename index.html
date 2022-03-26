@@ -2,13 +2,13 @@
 <html>
   <head>
     <title>HighKey|LowKey</title>
-    <!-- main stylesheet -->
+    <!-- stylesheets -->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest" crossorigin="use-credentials">
+    <link rel="manifest" crossorigin="use-credentials" href="images/site.webmanifest">
     <!-- fontawesome -->
     <link rel="stylesheet" type="text/css" href="fontawesome-6.0/css/all.css">
     <!-- javascript -->
@@ -19,9 +19,11 @@
       <nav>
         <img id="logo" src="images/plain-black-logo.png"/>
           <ul id="navigation">
-            <li class="navItem borderBottom hoverPadding pointer">Home</li>
+            <a href=""><li class="navItem borderBottom hoverPadding pointer">Home</li></a>
             <div class="dropdown hoverPadding">
-              <span class="navItem borderBottom pointer" id="ourProducts" onclick="productsClick()">Our Products</span>
+              <a href="Our-Products">
+                <span class="navItem borderBottom pointer" id="ourProducts" onclick="productsClick()">Our Products</span>
+              </a>
               <ul id="dropdown-content">
                 <li class="dropdownItem">Seasonal</li>
                 <li class="dropdownItem">Beauty</li>
