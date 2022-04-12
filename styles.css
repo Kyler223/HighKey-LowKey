@@ -133,14 +133,9 @@ nav {
     margin-bottom: 100px;
 }
 
-.product h3 {
-    padding: 0px 15px;
-    font-family: "lemon-milk";
-    font-size: 1.6rem;
-}
-
-.product p {
-    padding: 0px 15px;
+.product {
+    transition-duration: .2s;
+    transition-property: scale;
 }
 
 .product:hover {
@@ -148,9 +143,16 @@ nav {
     transition-duration: .2s;
 }
 
-.product {
-    transition-duration: .2s;
-    transition-property: scale;
+.product h3 {
+    margin: 20px 0;
+    padding: 0px 10px;
+    font-family: "lemon-milk";
+    font-size: 1.3rem;
+}
+
+.product p {
+    margin: 8px 0;
+    padding: 0px 10px;
 }
 
 .center-img {
@@ -184,6 +186,7 @@ footer {
     color: white;
     font-family: "Open Sans", Helvetica;
     text-align: center;
+    margin-top: 100px;
 }
 
 .absolute-footer {
@@ -241,8 +244,10 @@ footer p {
     cursor: pointer;
 }
 
-.left-right-center {
+.hamburger-expanded {
+    width: 100%;
     margin: 0 auto;
+    padding: 10px;
 }
 
 .red {
@@ -263,6 +268,8 @@ footer p {
         position: absolute;
         top: 10vh;
         box-shadow: 0 15px 30px rgba(0, 0, 0, .4);
+        margin: 0;
+        padding: 0;
     }
 
     .navItem {
@@ -276,6 +283,7 @@ footer p {
         text-align: center;
         width: 100%;
         background-color: white;
+        gap: 10px !important;
     }
     
     .navItemDropdown {      
@@ -283,9 +291,20 @@ footer p {
         border: none;
         line-height: 60px;
         width: 100%;
-        padding: 0;
+        padding: 0 !important;
         margin: 0 auto;
-        border-bottom: 1px solid rgba(0, 0, 0, .4);
+        border: none !important;
+    }
+
+    .navItemDropdown:hover {
+        transition: scale 5s;
+        transform: scale(102%);
+    }
+
+    .border-break {
+        width: 100%;
+        height: 1px;
+        background-color: rgba(0, 0, 0, .5);
     }
 
     .cart-absolute {
@@ -298,6 +317,11 @@ footer p {
     #hamburger {
         display: block;
         margin-top: 2px;
+        margin-right: 5vw;
+    }
+
+    #hamburger:hover {
+        transform: scale(102%);
     }
 
     .product {
@@ -330,6 +354,7 @@ footer p {
 
     #cart {
         display: block;
+        margin-right: 5vw;
     }
 
     #hamburger {
