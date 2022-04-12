@@ -29,7 +29,7 @@ function hamburgerClick() {
   navItems.forEach(item => {classToggler(item, 'navItemDropdown')});
   classToggler(cart, 'display-none');
   classToggler(cart, 'cart-absolute');
-  classToggler(hamburger, 'left-right-center');
+  classToggler(hamburger, 'hamburger-expanded');
 }
 
 // click event for Our Products
