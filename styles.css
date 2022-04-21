@@ -401,6 +401,7 @@ footer p {
 
 /* fonts */
 @font-face {
+    font-display: swap;
     font-family: "lemon-milk";
     src: url("/fonts/lemon_milk_font/LEMONMILK-Regular.otf") format("opentype"),
          url("/fonts/lemon_milk_font/LEMONMILK-Bold.otf") format("opentype"),
