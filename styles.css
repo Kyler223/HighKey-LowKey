@@ -223,6 +223,7 @@ footer p {
 
 #footerLogo {
     width: 35px;
+    height: 35px;
     align-self: flex-end;
     padding-bottom: 40px;
 }

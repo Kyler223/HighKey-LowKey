@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React, Web Development, Web Developer, Frontend, Websites, Optimize Website, Fast Website, Slow Website, SEO, Make Website, Custom Website">
+    <meta name="description" content="HighKey | LowKey is a fashion template website">
+    <meta name="author" content="Kyler Nelson">
     <title>About Us - HighKey|LowKey</title>
     <!-- stylesheets -->
     <link defer rel="stylesheet" type="text/css" href="../styles.css">
@@ -17,13 +22,13 @@
 <body>
     <header>
         <nav>
-            <a href="../"><img id="logo" src="../images/icons/plain-black-logo.png"/></a>
-            <ul id="navigation">
-                <a href="../">
+            <a href="/" title="Home"><img id="logo" alt="HighKey LowKey Logo" src="../images/icons/plain-black-logo.png"/></a>
+            <div id="navigation">
+                <a href="/" title="Home">
                     <li class="navItem borderBottom hoverPadding pointer">Home</li>
                 </a>
                 <div class="dropdown hoverPadding">
-                <a href="../Our-Products">
+                <a href="../Our-Products" title="Our Products">
                     <span class="navItem borderBottom pointer" id="ourProducts" onclick="productsClick()">Our Products</span>
                 </a>
                 <ul id="dropdown-content">
@@ -33,12 +38,12 @@
                     <li class="dropdownItem">Men's</li>
                 </ul>
                 </div>
-                <a href="">
+                <a href="../About-Us" title="About Us">
                     <li class="navItem borderBottom hoverPadding pointer">About Us</li>
                 </a>
-                <img class="icons pointer" id="cart" src="../images/icons/shopping-cart.png">
-                <img class="icons pointer" id="hamburger" src="../images/icons/bars.svg"onclick="hamburgerClick()">
-            </ul>
+                <img class="icons pointer" id="cart" alt="cart" src="../images/icons/shopping-cart.png">
+                <img class="icons pointer" id="hamburger" alt="collapse / expand mobile nav menu" src="../images/icons/bars.svg"onclick="hamburgerClick()">
+              </div>
         </nav>
     </header>
     <main class="main-margin-top">
@@ -46,7 +51,7 @@
     </main>
     <footer class="absolute-footer">
         <div class="footer-customerSupport">
-            <h4>Customer Support</h4>
+            <h2>Customer Support</h2>
             <a href="tel:+1800555555">
               <p>Call: <span class="underline">+1800-555-555</span></p>
             </a>
@@ -55,7 +60,7 @@
             </a>
           </div>
           <div class="footer-socialMedia">
-            <h4>Social Media</h4>
+            <h2>Social Media</h2>
             <a href="https://github.com/Kyler223" target="_blank">
             <i class="fa-brands fa-facebook-square fa-xl"></i>
             <p class="footer-p-marginLeft">Facebook</p>
@@ -67,7 +72,7 @@
             </a>
           </div>
           <div class="footer-locations">
-            <h4>Locations</h4>
+            <h2>Locations</h2>
             <!-- copied link of google maps location with the directions open and the starting point empty (google will remember this with the link) -->
             <!-- I did this instead of an interactive map because it costs money for having a google maps api key -->
             <a target="_blank" href="https://www.google.com/maps/dir//NK+Stockholm,+Hamngatan+18-20,+111+47+Stockholm,+Sweden/@59.3331042,18.0685776,18.46z/data=!4m16!1m6!3m5!1s0x465f9d5c19adfc51:0x71d7e22255fa1cde!2sNK+Stockholm!8m2!3d59.3331523!4d18.0691707!4m8!1m0!1m5!1m1!1s0x465f9d5c19adfc51:0x71d7e22255fa1cde!2m2!1d18.0691707!2d59.3331523!3e4">
@@ -77,7 +82,7 @@
             </a>
           </div>
           <div class="break"></div>
-          <img id="footerLogo" src="../images/icons/plain-white-logo.png">
+          <img id="footerLogo" alt="HighKey LowKey White Logo" src="../images/icons/plain-white-logo.png">
     </footer>
 </body>
 </html>

@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>HighKey|LowKey</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React, Web Development, Web Developer, Frontend, Websites, Optimize Website, Fast Website, Slow Website, SEO, Make Website, Custom Website">
+    <meta name="description" content="HighKey | LowKey is a fashion template website">
+    <meta name="author" content="Kyler Nelson">
+    <title>HighKey | LowKey</title>
     <!-- stylesheets -->
     <link defer rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="home-styles.css">
     <!-- favicon -->
-    <link defer rel="apple-touch-icon" sizes="180x180" href="../images/favicons/apple-touch-icon.png">
-    <link defer rel="icon" type="image/png" sizes="32x32" href="../images/favicons/favicon-32x32.png">
-    <link defer rel="icon" type="image/png" sizes="16x16" href="../images/favicons/favicon-16x16.png">
+    <link defer rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link defer rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link defer rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
     <link defer rel="manifest" crossorigin="use-credentials" href="images/favicons/site.webmanifest">
     <!-- fontawesome -->
     <link defer rel="stylesheet" type="text/css" href="fontawesome-6.0/css/all.css">
@@ -18,14 +23,14 @@
   <body>
     <header>
       <nav>
-        <a href=""><img id="logo" src="images/icons/plain-black-logo.png"/></a>
-        <ul id="navigation">
-            <a href="">
+        <a href="/" title="Home"><img id="logo" alt="HighKey LowKey Logo" src="images/icons/plain-black-logo.png"/></a>
+        <div id="navigation">
+            <a href="/" title="Home">
                 <li class="navItem borderBottom hoverPadding pointer">Home</li>
             </a>
             <div class="border-break"></div>
             <div class="dropdown hoverPadding">
-            <a href="Our-Products">
+            <a href="Our-Products" title="Our Products">
                 <span class="navItem borderBottom pointer" id="ourProducts" onclick="productsClick()">Our Products</span>
             </a>
             <ul id="dropdown-content">
@@ -36,16 +41,16 @@
             </ul>
             </div>
             <div class="border-break"></div>
-            <a href="About-Us">
+            <a href="About-Us" title="About Us">
                 <li class="navItem borderBottom hoverPadding pointer">About Us</li>
             </a>
             <div class="border-break"></div>
-            <img class="icons pointer" id="cart" src="images/icons/shopping-cart.png">
-            <img class="icons pointer" id="hamburger" src="images/icons/bars.svg"onclick="hamburgerClick()">
-        </ul>
+            <img class="icons pointer" id="cart" alt="cart" src="images/icons/shopping-cart.png">
+            <img class="icons pointer" id="hamburger" alt="collapse / expand mobile nav menu" src="images/icons/bars.svg"onclick="hamburgerClick()">
+          </div>
       </nav>
         <section class="banner">
-          <img src="images/pexels-elias-de-carvalho-1144834.webp">
+          <img alt="banner of woman holding purse" src="images/pexels-elias-de-carvalho-1144834.webp">
         </section>
       </header>
       <main>
@@ -56,48 +61,48 @@
               <h3>Denim Jacket</h3>
               <p>$55</p>
               <div class="center-img">
-                <img src="images/pexels-bankole-adeoni-7206287.webp">
+                <img alt="Denim Jacket" src="images/pexels-bankole-adeoni-7206287.webp">
               </div>
             </div>
             <div class="product reveal">
               <h3>High Heeled Sandal</h3>
               <p>$40</p>
               <div class="center-img">
-                <img src="images/pexels-evg-kowalievska-4088468.webp">
+                <img alt="High Heeled Sandal" src="images/pexels-evg-kowalievska-4088468.webp">
               </div>
             </div>
             <div class="product reveal">
               <h3>Tank Top</h3>
               <p>$20</p>
               <div class="center-img">
-                <img src="images/pexels-elias-de-carvalho-1375849.webp">
+                <img alt="Tank Top" src="images/pexels-elias-de-carvalho-1375849.webp">
               </div>
             </div>
             <div class="product reveal">
               <h3>Leather Jacket</h3>
               <p>$180</p>
               <div class="center-img">
-                <img src="images/pexels-anastasiya-lobanovskaya-1035685.webp">
+                <img alt="Leather Jacket" src="images/pexels-anastasiya-lobanovskaya-1035685.webp">
               </div>
             </div>
             <div class="product reveal">
               <h3>Sunglasses</h3>
               <p>$20</p>
               <div class="center-img">
-                <img src="images/pexels-ali-pazani-2584269.webp">
+                <img alt="Sunglasses" src="images/pexels-ali-pazani-2584269.webp">
               </div>
             </div>
             <div class="product reveal">
               <h3>Crewneck Sweatshirt</h3>
               <p>$35</p>
               <div class="center-img">
-                <img src="images/pexels-pixabay-206434.webp">
+                <img alt="Crewneck Sweatshirt" src="images/pexels-pixabay-206434.webp">
               </div>
             </div>
           </div>
         </section>
       <figure class="mid-banner">
-          <img src="images/pexels-vinicius-wiesehofer-1090387.webp">
+          <img alt="woman wearing earrings" src="images/pexels-vinicius-wiesehofer-1090387.webp">
           <figcaption id="earring-text">Earrings <span class="red">15% off!</figcaption>
       </figure>
     </main>
@@ -134,7 +139,7 @@
         </a>
       </div>
       <div class="break"></div>
-      <img id="footerLogo" src="images/icons/plain-white-logo.png">
+      <img id="footerLogo" alt="HighKey LowKey White Logo" src="images/icons/plain-white-logo.png">
     </footer>
   </body>
 </html>
