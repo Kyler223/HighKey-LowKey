@@ -1,5 +1,4 @@
 :root {
-    --icon-size: 30px;
     --nav-height: 10vh;
     --pink-backgrond: #f4c5cd; 
 }
@@ -100,9 +99,9 @@ nav {
     opacity: 1;
 }
 
-.icons {
-    width: var(--icon-size);
-    height: var(--icon-size);
+.nav-icons {
+    width: 35px;
+    height: 35px;
 }
 
 /* end of nav */
@@ -186,7 +185,7 @@ footer {
     color: white;
     font-family: "Open Sans", Helvetica;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .absolute-footer {
@@ -212,9 +211,21 @@ a {
     color: inherit;
 }
 
-.footer-p-marginLeft {
-    display: inline;
-    margin-left: 8px;
+.footer-icon-text-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icons {
+    width: 22px;
+    height: 22px;
+    margin: auto 0;
+}
+
+.footer-p-social {
+    font-size: 1.15rem;
+    margin: auto 12px;
 }
 
 footer p {
