@@ -3,6 +3,16 @@
     --pink-backgrond: #f4c5cd; 
 }
 
+/* fonts */
+@font-face {
+    font-display: swap;
+    font-family: "lemon-milk";
+    src: url("/fonts/lemon_milk_font/LEMONMILK-Regular.otf") format("opentype"),
+         url("/fonts/lemon_milk_font/LEMONMILK-Bold.otf") format("opentype"),
+         url("/fonts/lemon_milk_font/LEMONMILK-Light.otf") format("opentype"),
+         url("/fonts/lemon_milk_font/LEMONMILK-Medium.otf") format("opentype");
+}
+
 body {
     background-color: var(--pink-backgrond);
     margin: 0;
@@ -416,14 +426,3 @@ footer p {
         transform: scale(100%);
     }
 }
-
-/* fonts */
-@font-face {
-    font-display: swap;
-    font-family: "lemon-milk";
-    src: url("/fonts/lemon_milk_font/LEMONMILK-Regular.otf") format("opentype"),
-         url("/fonts/lemon_milk_font/LEMONMILK-Bold.otf") format("opentype"),
-         url("/fonts/lemon_milk_font/LEMONMILK-Light.otf") format("opentype"),
-         url("/fonts/lemon_milk_font/LEMONMILK-Medium.otf") format("opentype");
-}
-  
