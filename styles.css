@@ -3,6 +3,21 @@
     --pink-backgrond: #f4c5cd; 
 }
 
+@media screen and (max-width: 650px){
+    :root {
+        --nav-height: 60px;
+    }
+    .nav-icons {
+        width: calc(var(--nav-height) * .60) !important;
+        height: calc(var(--nav-height) * .60) !important;
+    }
+}
+@media screen and (max-width: 500px){
+    :root {
+        --nav-height: 40px;
+    }
+}
+
 /* fonts */
 @font-face {
     font-display: swap;
@@ -33,9 +48,9 @@ nav {
 }
 
 #logo {
-    margin: 20px;
-    width: calc(var(--nav-height) * .70);
-    height: calc(var(--nav-height) * .70);
+    margin: calc(var(--nav-height) * .20);
+    width: calc(var(--nav-height) * .60);
+    height: calc(var(--nav-height) * .60);
     animation: .35s pop;
 }
 
@@ -125,6 +140,7 @@ nav {
     margin-top: 50px;
     font-family: "lemon-milk";
     font-size: 3rem;
+    padding: 20px;
     text-align: center;
 }
 
@@ -278,7 +294,7 @@ footer p {
     }
 
     html {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .navigation-expand {

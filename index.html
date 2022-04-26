@@ -20,17 +20,37 @@
     <!-- javascript -->
     <script defer type="text/javascript" src="script.js"></script>
     <style>
+      :root {
+        --nav-height: 100px;
+        --pink-backgrond: #f4c5cd; 
+      }
       @media screen and (max-width: 800px){
-          .product img{
-              max-width: 90%;
-              max-height: 800px;
-          }
+        .featured-section h2 {
+          font-size: 2rem !important;
         }
+      }
+      @media screen and (max-width: 650px){
+        :root {
+            --nav-height: 60px;
+        }
+        .product img {
+            max-width: 90%;
+            max-height: 800px;
+        }
+      }
+      @media screen and (max-width: 500px){
+          :root {
+              --nav-height: 40px;
+          }
+          .featured-section h2 {
+            font-size: 1.5rem !important;
+          }
+      }
     </style>
   </head>
-  <body style="background-color: #f4c5cd;margin:0;padding:0;">
+  <body style="background-color: var(--pink-backgrond);margin:0;padding:0;">
     <header>
-      <nav style="display: flex;justify-content: space-between;" width="100%" height="100px">
+      <nav style="display: flex;justify-content: space-between;" width="100%" height="--nav-height">
         <a href="/" title="Home">
           <img id="logo" width="74px" height="70px" loading="eager" alt="HighKey LowKey Logo" src="images/icons/plain-black-logo.png"/>
         </a>
@@ -59,7 +79,7 @@
             <img class="nav-icons pointer" id="hamburger" width="35px" height="35px" loading="eager" alt="collapse / expand mobile nav menu" src="/svgs/bars.svg"onclick="hamburgerClick()">
           </div>
       </nav>
-        <section class="banner" style="margin-top: 100px">
+        <section class="banner" style="margin-top: var(--nav-height)">
           <img alt="banner of woman holding purse" width="100%" height="60%" loading="eager" src="images/pexels-elias-de-carvalho-1144834.webp">
         </section>
       </header>
