@@ -115,10 +115,6 @@ nav {
 
 /* end of nav */
 
-.main-margin-top {
-    margin-top: var(--nav-height);
-}
-
 .featured-section {
     margin: 30px auto;
     max-width: 1300px;
