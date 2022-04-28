@@ -1,0 +1,51 @@
+#logo:hover {
+    transform: scale(102%);
+}
+
+.borderBottom:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.hoverPadding:hover {
+    padding: 0 1px;
+}
+
+.dropdownItem:hover {
+    font-size: 1.02rem;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.7);
+}
+
+#cart:hover {
+    transform: scale(104%);
+    opacity: 1;
+}
+
+.product:hover {
+    transform: scale(101%);
+    transition-duration: .2s;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/* phones */
+@media screen and (max-width: 800px){
+    .navItemDropdown:hover {
+        transition: scale 5s;
+        transform: scale(102%);
+    }
+    #hamburger:hover {
+        transform: scale(102%);
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 801px){
+    .navItem:hover {
+        padding-bottom: 10px;
+    }
+    .dropdown:hover #dropdown-content {
+        display: block;
+    }
+}

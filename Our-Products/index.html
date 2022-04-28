@@ -9,41 +9,106 @@
     <title>Our Products - HighKey|LowKey</title>
     <!-- stylesheets -->
     <link rel="stylesheet" type="text/css" href="../styles.css">
+    <!-- fonts -->
+    <link href="/fonts/lemon_milk_font/LEMONMILK-Regular.otf" 
+      rel="preload" 
+      as="font" 
+      crossorigin>
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
-    <link rel="manifest" crossorigin="use-credentials" href="../images/favicons/site.webmanifest">
+    <link href="../images/favicons/apple-touch-icon.png" 
+      rel="apple-touch-icon" 
+      type="image/png" 
+      sizes="180x180">
+    <link href="../images/favicons/favicon-32x32.png" 
+      rel="icon" 
+      type="image/png" 
+      sizes="32x32">
+    <link href="../images/favicons/favicon-16x16.png" 
+      rel="icon" 
+      type="image/png" 
+      sizes="16x16">
+    <link href="images/favicons/site.webmanifest" 
+      rel="manifest" 
+      crossorigin="use-credentials">
     <!-- javascript -->
-    <script defer type="text/javascript" src="../script.js"></script>
+    <script>
+        window.addEventListener("load", function(){
+            var element = document.createElement("script");
+            element.src = "../script.js";
+            document.body.appendChild(element);
+            var link = document.createElement('link');
+            link.href = '../styles-actions.css';
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            document.head.appendChild(link);
+        });
+    </script>
+      <noscript>
+        <style>
+            .reveal {
+                opacity: 1 !important;
+            }
+        </style>
+    </noscript>
 </head>
 <body>
     <header>
-      <nav>
-        <a href="/" title="Home"><img id="logo" alt="HighKey LowKey Logo" src="../images/icons/plain-black-logo.png"/></a>
-        <div id="navigation">
-            <a href="/" title="Home">
-                <li class="navItem borderBottom hoverPadding pointer">Home</li>
+      <nav style="display: flex;justify-content: space-between;" 
+        width="100%" height="--nav-height">
+        <a href="/HighKey-LowKey" title="Home">
+          <img src="/images/plain-black-logo.webp"
+            id="logo" 
+            width="74px" height="70px" 
+            loading="eager" 
+            alt="HighKey LowKey Logo"
+          />
+        </a>
+        <div id="navigation" 
+          style="display: inline-flex;font-size: 1.25rem;">
+            <a href="/HighKey-LowKey" title="Home">
+                <li class="navItem borderBottom hoverPadding pointer">
+                  Home
+                </li>
             </a>
             <div class="border-break"></div>
-            <div class="dropdown hoverPadding">
-            <a href="../Our-Products" title="Our Products">
-                <span class="navItem borderBottom pointer" id="ourProducts" onclick="productsClick()">Our Products</span>
-            </a>
-            <ul id="dropdown-content">
-                <li class="dropdownItem">Seasonal</li>
-                <li class="dropdownItem">Beauty</li>
-                <li class="dropdownItem">Women's</li>
-                <li class="dropdownItem">Men's</li>
-            </ul>
+            <div class="dropdown hoverPadding" 
+              style="display: inline-block;">
+              <a href="../Our-Products" title="Our Products">
+                  <span class="navItem borderBottom pointer" 
+                    id="ourProducts" 
+                    onclick="productsClick()">
+                    Our Products
+                  </span>
+              </a>
+              <ul id="dropdown-content" style="display: none;">
+                  <li class="dropdownItem">Seasonal</li>
+                  <li class="dropdownItem">Beauty</li>
+                  <li class="dropdownItem">Women's</li>
+                  <li class="dropdownItem">Men's</li>
+              </ul>
             </div>
             <div class="border-break"></div>
             <a href="../About-Us" title="About Us">
-                <li class="navItem borderBottom hoverPadding pointer">About Us</li>
+                <li class="navItem borderBottom hoverPadding pointer">
+                  About Us
+                </li>
             </a>
             <div class="border-break"></div>
-            <img class="nav-icons pointer" id="cart" alt="cart" src="../images/icons/shopping-cart.png">
-            <img class="nav-icons pointer" id="hamburger" alt="collapse / expand mobile nav menu" src="/svgs/bars.svg"onclick="hamburgerClick()">
+            <img src="/images/shopping-cart.webp" 
+              class="nav-icons pointer" 
+              id="cart" 
+              alt="cart" 
+              width="35px" height="35px" 
+              loading="eager"
+            />
+            <img src="/images/bars.svg" 
+              class="nav-icons pointer" 
+              id="hamburger" 
+              width="35px" height="35px" 
+              loading="eager" 
+              alt="collapse / expand mobile nav menu" 
+              onclick="hamburgerClick()"
+            />
           </div>
       </nav>
     </header>
@@ -54,24 +119,46 @@
       <div class="footer-customerSupport">
         <h4>Customer Support</h4>
         <a href="tel:+1800555555">
-          <p>Call: <span class="underline">+1800-555-555</span></p>
+          <p>Call: 
+            <span class="underline">
+              +1800-555-555
+            </span>
+          </p>
         </a>
         <a href="mailto: support@example.com">
-          <p>Email: <span class="underline">support@example.com</span></p>
+          <p>Email: 
+            <span class="underline">
+              support@example.com
+            </span>
+          </p>
         </a>
       </div>
       <div class="footer-socialMedia">
         <h4>Social Media</h4>
         <a href="https://github.com/Kyler223" target="_blank">
           <div class="footer-icon-text-div">
-            <img class="icons" src="/svgs/facebook-square.svg" alt="Facebook Icon">
-            <p class="footer-p-social">Facebook</p>
+            <img src="/images/facebook-square.svg" 
+              class="icons" 
+              width="22px" height="22px" 
+              loading="lazy" 
+              alt="Facebook Icon"
+            />
+            <p class="footer-p-social">
+              Facebook
+            </p>
           </div>
         </a>
         <a href="https://github.com/Kyler223" target="_blank">
           <div class="footer-icon-text-div">
-            <img class="icons" src="/svgs/twitter-square.svg" alt="Twitter Icon">
-            <p class="footer-p-social">Twitter</p>
+            <img src="/images/twitter-square.svg" 
+              class="icons" 
+              width="22px" height="22px" 
+              loading="lazy" 
+              alt="Twitter Icon"
+            />
+            <p class="footer-p-social">
+              Twitter
+            </p>
           </div>
         </a>
       </div>
@@ -79,16 +166,27 @@
         <h4>Locations</h4>
         <!-- copied link of google maps location with the directions open and the starting point empty (google will remember this with the link) -->
         <!-- I did this instead of an interactive map because it costs money for having a google maps api key -->
-        <a target="_blank" href="https://www.google.com/maps/dir//NK+Stockholm,+Hamngatan+18-20,+111+47+Stockholm,+Sweden/@59.3331042,18.0685776,18.46z/data=!4m16!1m6!3m5!1s0x465f9d5c19adfc51:0x71d7e22255fa1cde!2sNK+Stockholm!8m2!3d59.3331523!4d18.0691707!4m8!1m0!1m5!1m1!1s0x465f9d5c19adfc51:0x71d7e22255fa1cde!2m2!1d18.0691707!2d59.3331523!3e4">
+        <a href="https://www.google.com/maps/dir//NK+Stockholm,+Hamngatan+18-20,+111+47+Stockholm,+Sweden/@59.3331042,18.0685776,18.46z/data=!4m16!1m6!3m5!1s0x465f9d5c19adfc51:0x71d7e22255fa1cde!2sNK+Stockholm!8m2!3d59.3331523!4d18.0691707!4m8!1m0!1m5!1m1!1s0x465f9d5c19adfc51:0x71d7e22255fa1cde!2m2!1d18.0691707!2d59.3331523!3e4" 
+          target="_blank">
           <p>1234 Street Ave, City, State 12345</p>
           <div class="footer-icon-text-div">
-            <img class="icons" src="/svgs/location-dot.svg" alt="Location Icon">
+            <img src="/images/location-dot.svg" 
+              class="icons" 
+              width="22px" height="22px" 
+              loading="lazy" 
+              alt="Location Icon"
+            />
             <p class="underline footer-p-social">Directions</p>
           </div>
         </a>
       </div>
       <div class="break"></div>
-      <img id="footerLogo" alt="HighKey LowKey White Logo" src="../images/icons/plain-white-logo.png">
+      <img src="/images/plain-white-logo.webp" 
+        id="footerLogo" 
+        alt="HighKey LowKey White Logo" 
+        width="35px" height="35px" 
+        loading="lazy"
+      />
     </footer>
 </body>
 </html>
