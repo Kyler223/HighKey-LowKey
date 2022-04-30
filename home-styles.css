@@ -7,7 +7,7 @@
 .banner img {
     object-fit: cover;
     width: 100%;
-    min-height: 55vh;
+    /* min-height: 55vh; */
     max-height: 65vh;
 }
 

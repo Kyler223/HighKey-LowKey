@@ -1,13 +1,11 @@
 :root {
-    --loading-image-height: 10px;
+    --loading-image-height: 0px;
 }
 
 img {
     object-fit: cover !important;
-    min-height: var(--loading-image-height) !important;
-    max-height: var(--loading-image-height) !important;
+    /* min-height: var(--loading-image-height) !important; */
     height: var(--loading-image-height) !important;
     width: 100% !important;
     overflow: hidden !important;
-
 }
