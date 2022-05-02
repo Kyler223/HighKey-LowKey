@@ -1,11 +1,7 @@
 :root {
-    --loading-image-height: 0px;
+    --loading-image-height: 100%;
 }
 
 img {
-    object-fit: cover !important;
-    /* min-height: var(--loading-image-height) !important; */
-    height: var(--loading-image-height) !important;
-    width: 100% !important;
-    overflow: hidden !important;
+    clip-path: inset(0px 0px var(--loading-image-height) 0px) !important;
 }
