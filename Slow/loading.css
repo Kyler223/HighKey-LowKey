@@ -3,5 +3,6 @@
 }
 
 img {
+    width: 100%;
     clip-path: inset(0px 0px var(--loading-image-height) 0px) !important;
 }

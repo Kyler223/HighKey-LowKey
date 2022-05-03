@@ -1,14 +1,14 @@
 .banner {
     margin-top: var(--nav-height);
     width: 100%;
+    max-height: 55vh;
     position: relative;
 }
 
 .banner img {
     object-fit: cover;
     width: 100%;
-    /* min-height: 55vh; */
-    max-height: 65vh;
+    height: 55vh;
 }
 
 .mid-banner {

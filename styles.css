@@ -118,7 +118,7 @@ nav {
 }
 
 .featured-section h2 {
-    margin-top: 50px;
+    margin-top: 30px;
     font-family: "lemon-milk";
     font-size: 3rem;
     padding: 20px;
@@ -161,8 +161,7 @@ nav {
 
 .product img {
     max-width: 100%;
-    height: 35vh !important;
-    object-fit: fill;
+    object-fit: cover;
     margin: auto;
 }
 
@@ -250,6 +249,9 @@ nav {
         padding: 0 20px;
         padding-bottom: 35px;
         overflow: hidden;
+    }
+    .product img {
+        height: 60vw;
     }
 }
 
