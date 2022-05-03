@@ -1,8 +1,18 @@
 :root {
-    --loading-image-height: 100%;
+    --slow-loading-image-height: 100%;
+    --meduim-loading-image-height: 100%;
+    --fast-loading-image-height: 100%;
 }
 
 img {
     width: 100%;
-    clip-path: inset(0px 0px var(--loading-image-height) 0px) !important;
+}
+.slow-loading {
+    clip-path: inset(0px 0px var(--slow-loading-image-height) 0px) !important;
+}
+.meduim-loading {
+    clip-path: inset(0px 0px var(--meduim-loading-image-height) 0px) !important;
+}
+.fast-loading {
+    clip-path: inset(0px 0px var(--fast-loading-image-height) 0px) !important;
 }
