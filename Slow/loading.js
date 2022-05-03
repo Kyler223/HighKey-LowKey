@@ -13,7 +13,7 @@ var slowNext = 100;
 var meduimNext = 50;
 var fastNext = 25;
 
-var backgroundAlpha = 0;
+var backgroundAlpha = 0.2;
 var backgroundAlphaTime = 0;
 
 //sets images if they should load slow, meduim, or fast
@@ -38,19 +38,19 @@ images.forEach(image => {
 console.log(images);
 
 function load() {
-    if(i === slowPictureTime) {
+    if(i === slowPictureTime && slowLoadPercent > 0) {
         slowLoadPercent = slowLoadPercent - 1;
         document.documentElement.style.setProperty(
             '--slow-loading-image-height', `${slowLoadPercent}%`);
         slowPictureTime = slowPictureTime + slowNext;
     }
-    if(i === meduimPictureTime) {
+    if(i === meduimPictureTime && meduimLoadPercent > 0) {
         meduimLoadPercent = meduimLoadPercent - 1;
         document.documentElement.style.setProperty(
             '--meduim-loading-image-height', `${meduimLoadPercent}%`);
-        slowPictureTime = slowPictureTime + meduimNext;
+        meduimPictureTime = meduimPictureTime + meduimNext;
     }
-    if(i === fastPictureTime) {
+    if(i === fastPictureTime && fastLoadPercent > 0) {
         fastLoadPercent = fastLoadPercent - 1;
         document.documentElement.style.setProperty(
             '--fast-loading-image-height', `${fastLoadPercent}%`);
