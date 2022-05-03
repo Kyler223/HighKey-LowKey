@@ -2,7 +2,7 @@ var images = document.querySelectorAll('img');
 var i = 0;
 var pictureTime = 0;
 var nextPictureTime = 40;
-var pixelsToLoad = 100;
+var pixelsToLoad = 98;
 var backgroundAlpha = 0.1;
 var backgroundAlphaTime = 0;
 

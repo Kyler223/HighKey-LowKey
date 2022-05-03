@@ -91,30 +91,16 @@
   transform: rotate(320deg);
   transform-origin: 146px 61px;
 }
-.loadingio-spinner-spin-uqdbeqxczu {
+.loading-spinner {
   width: 200px;
   height: 200px;
-  /* display: absolute; */
+  padding: 0;
+  left: 50%;
+	top: 50%;
+  transform: translate(-100px, -100px) scale(25%);
   position: fixed;
-  vertical-align: middle;
-  border: 1px solid red;
   overflow: hidden;
-  transform: scale(25%);
   z-index: 100;
-}
-/* phones */
-@media screen and (max-width: 800px){
-  .loadingio-spinner-spin-uqdbeqxczu {
-    top: 40%;
-    left: 30%;
-  }
-}
-/* desktop */
-@media screen and (min-width: 800px){
-  .loadingio-spinner-spin-uqdbeqxczu {
-    top: 40%;
-    left: 40%;
-  }
 }
 .ldio-fg1egpabxi4 {
   width: 100%;
