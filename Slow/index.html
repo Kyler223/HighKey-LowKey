@@ -34,24 +34,22 @@
       crossorigin="use-credentials">
     <!-- javascript -->
     <script>
-        window.addEventListener("load", function(){
-            var element = document.createElement("script");
-            element.src = "../script.js";
-            document.body.appendChild(element);
-            var scriptSrcs = 
-            ["loading.js", "../script.js"];
-            for (var i = 0; i < scriptSrcs.length; i++) {
-                var element = document.createElement("script");
-                element.src = scriptSrcs[i];
-                element.type = "text/javascript";
-                document.body.appendChild(element);
-            }
-            var link = document.createElement('link');
-            link.href = '../styles-actions.css';
-            link.rel = 'stylesheet';
-            link.type = 'text/css';
-            document.head.appendChild(link);
-        });
+      //after page loads
+      window.addEventListener("load", function(){
+          var scriptSrcs = 
+          ["loading.js", "../script.js"];
+          for (var i = 0; i < scriptSrcs.length; i++) {
+              var element = document.createElement("script");
+              element.src = scriptSrcs[i];
+              element.type = "text/javascript";
+              document.body.appendChild(element);
+          }
+          var link = document.createElement('link');
+          link.href = '../styles-actions.css';
+          link.rel = 'stylesheet';
+          link.type = 'text/css';
+          document.head.appendChild(link);
+      });
     </script>
       <noscript>
         <style>
@@ -61,15 +59,12 @@
         </style>
     </noscript>
     <style>
-      @font-face {
-          font-display: swap;
-          font-family: "lemon-milk";
-          src: url("/fonts/lemon_milk_font/LEMONMILK-Regular.otf") 
-            format("opentype");
+      img {
+        display: none;
       }
-
       :root {
         --nav-height: 100px;
+        --pink-backgrond: hsl(350, 0%, 86.5%);
       }
       @media screen and (max-width: 800px){
         .featured-section h2 {

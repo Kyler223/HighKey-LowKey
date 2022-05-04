@@ -13,8 +13,8 @@ var slowNext = 100;
 var meduimNext = 50;
 var fastNext = 25;
 
-var backgroundAlpha = 0.2;
-var backgroundAlphaTime = 0;
+var backgroundSaturation = 10;
+var backgroundSaturationTime = 100;
 
 //sets images if they should load slow, meduim, or fast
 var imagesForLoop = 1;
@@ -35,8 +35,6 @@ images.forEach(image => {
     }
 });
 
-console.log(images);
-
 function load() {
     if(i === slowPictureTime && slowLoadPercent > 0) {
         slowLoadPercent = slowLoadPercent - 1;
@@ -56,19 +54,24 @@ function load() {
             '--fast-loading-image-height', `${fastLoadPercent}%`);
         fastPictureTime = fastPictureTime + fastNext;
     }
-    if(backgroundAlpha < 1) {
-        if(i === backgroundAlphaTime) {
+    if(backgroundSaturation < 68.1) {
+        if(i === backgroundSaturationTime) {
+            //68.1%
             document.documentElement.style.setProperty(
-                '--pink-backgrond', `rgba(244, 197, 205, ${backgroundAlpha})`);
-            backgroundAlpha = backgroundAlpha + .2;
-            backgroundAlphaTime = i + 300;
-            console.log(`backgroundAlpha: ${backgroundAlpha}`);
-            // need to round to the nearest decimal
+                '--pink-backgrond', `hsl(350, ${backgroundSaturation}%, 86.5%)`);
+            backgroundSaturation = 
+                Math.round((backgroundSaturation + 15) * 10) / 10;
+            if(backgroundSaturation > 68.1) {backgroundSaturation = 68.1;}
+            backgroundSaturationTime = i + 300;
+            console.log(`backgroundSaturation: ${backgroundSaturation}`);
         }
     }
-
+    console.log(backgroundSaturationTime);
+    // console.log(i);
     i++;
-    window.requestAnimationFrame(load);
+    if(slowLoadPercent > 0 || meduimLoadPercent > 0 || 
+        fastLoadPercent > 0 || backgroundSaturation < 68.1) {
+            window.requestAnimationFrame(load);
+        }
 }
-
 window.requestAnimationFrame(load);
