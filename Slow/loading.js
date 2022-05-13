@@ -13,7 +13,7 @@ var slowNext = 100;
 var meduimNext = 50;
 var fastNext = 25;
 
-var backgroundSaturation = 10;
+var backgroundSaturation = 30;
 var backgroundSaturationTime = 100;
 
 //sets images if they should load slow, meduim, or fast
