@@ -5,9 +5,9 @@ var slowPictureTime = 0;
 var meduimPictureTime = 0;
 var fastPictureTime = 0;
 //current percent cropped
-var slowLoadPercent = 98;
-var meduimLoadPercent = 98;
-var fastLoadPercent = 98;
+var slowLoadPercent = 80;
+var meduimLoadPercent = 55;
+var fastLoadPercent = 90;
 //when it will crop again
 var slowNext = 100;
 var meduimNext = 50;
@@ -21,11 +21,11 @@ var imagesForLoop = 1;
 images.forEach(image => {
     switch(imagesForLoop) {
         case 1:
-            image.classList.add("slow-loading");
+            image.classList.add("meduim-loading");
             imagesForLoop++
             break;
         case 2:
-            image.classList.add("meduim-loading");
+            image.classList.add("slow-loading");
             imagesForLoop++
             break;
         case 3:
