@@ -37,7 +37,7 @@
       //after page loads
       window.addEventListener("load", function(){
           var scriptSrcs = 
-          ["loading.js", "../script.js"];
+          ["loading.js", "../script.js", "/lazy-load.js"];
           for (var i = 0; i < scriptSrcs.length; i++) {
               var element = document.createElement("script");
               element.src = scriptSrcs[i];
@@ -178,10 +178,10 @@
               <h3>Denim Jacket</h3>
               <p>$55</p>
               <div class="center-img">
-                <img src="../images/pexels-bankole-adeoni-7206287.webp" 
+                <img lazy="../images/pexels-bankole-adeoni-7206287.webp" 
                   alt="Denim Jacket" 
                   loading="lazy"
-                  srcset="../images/pexels-bankole-adeoni-7206287-small.webp 480w"
+                  srcset-lazy="../images/pexels-bankole-adeoni-7206287-small.webp 480w"
                 />
               </div>
             </div>
@@ -189,10 +189,10 @@
               <h3>High Heeled Sandal</h3>
               <p>$40</p>
               <div class="center-img">
-                <img src="../images/pexels-evg-kowalievska-4088468.webp" 
+                <img lazy="../images/pexels-evg-kowalievska-4088468.webp" 
                   alt="High Heeled Sandal" 
                   loading="lazy"
-                  srcset="../images/pexels-evg-kowalievska-4088468-small.webp 480w"
+                  srcset-lazy="../images/pexels-evg-kowalievska-4088468-small.webp 480w"
                 />
               </div>
             </div>
@@ -200,10 +200,10 @@
               <h3>Tank Top</h3>
               <p>$20</p>
               <div class="center-img">
-                <img src="../images/pexels-elias-de-carvalho-1375849.webp" 
+                <img lazy="../images/pexels-elias-de-carvalho-1375849.webp" 
                   alt="Tank Top" 
                   loading="lazy"
-                  srcset="../images/pexels-elias-de-carvalho-1375849-small.webp 480w"
+                  srcset-lazy="../images/pexels-elias-de-carvalho-1375849-small.webp 480w"
                 />
               </div>
             </div>
@@ -211,10 +211,10 @@
               <h3>Leather Jacket</h3>
               <p>$180</p>
               <div class="center-img">
-                <img src="../images/pexels-anastasiya-lobanovskaya-1035685.webp" 
+                <img lazy="../images/pexels-anastasiya-lobanovskaya-1035685.webp" 
                   alt="Leather Jacket" 
                   loading="lazy"
-                  srcset="../images/pexels-anastasiya-lobanovskaya-1035685-small.webp 480w"
+                  srcset-lazy="../images/pexels-anastasiya-lobanovskaya-1035685-small.webp 480w"
                 />
               </div>
             </div>
@@ -222,10 +222,10 @@
               <h3>Sunglasses</h3>
               <p>$20</p>
               <div class="center-img">
-                <img src="../images/pexels-ali-pazani-2584269.webp" 
+                <img lazy="../images/pexels-ali-pazani-2584269.webp" 
                   alt="Sunglasses" 
                   loading="lazy"
-                  srcset="../images/pexels-ali-pazani-2584269-small.webp 480w"
+                  srcset-lazy="../images/pexels-ali-pazani-2584269-small.webp 480w"
                 />
               </div>
             </div>
@@ -233,17 +233,17 @@
               <h3>Crewneck Sweatshirt</h3>
               <p>$35</p>
               <div class="center-img">
-                <img src="../images/pexels-pixabay-206434.webp" 
+                <img lazy="../images/pexels-pixabay-206434.webp" 
                   alt="Crewneck Sweatshirt" 
                   loading="lazy"
-                  srcset="../images/pexels-pixabay-206434-small.webp 480w"
+                  srcset-lazy="../images/pexels-pixabay-206434-small.webp 480w"
                 />
               </div>
             </div>
           </div>
         </section>
       <figure class="mid-banner">
-          <img src="../images/pexels-vinicius-wiesehofer-1090387.webp" 
+          <img lazy="../images/pexels-vinicius-wiesehofer-1090387.webp" 
             alt="woman wearing earrings" 
             loading="lazy" 
             width="100%" height="400px" 
@@ -279,7 +279,7 @@
         <h4>Social Media</h4>
         <a href="https://github.com/Kyler223" target="_blank">
           <div class="footer-icon-text-div">
-            <img src="/images/facebook-square.svg" 
+            <img lazy="/images/facebook-square.svg" 
               class="icons" 
               width="22px" height="22px" 
               loading="lazy" 
@@ -292,7 +292,7 @@
         </a>
         <a href="https://github.com/Kyler223" target="_blank">
           <div class="footer-icon-text-div">
-            <img src="/images/twitter-square.svg" 
+            <img lazy="/images/twitter-square.svg" 
               class="icons" 
               width="22px" height="22px" 
               loading="lazy" 
@@ -312,7 +312,7 @@
           target="_blank">
           <p>1234 Street Ave, City, State 12345</p>
           <div class="footer-icon-text-div">
-            <img src="/images/location-dot.svg" 
+            <img lazy="/images/location-dot.svg" 
               class="icons" 
               width="22px" height="22px" 
               loading="lazy" 
@@ -323,7 +323,7 @@
         </a>
       </div>
       <div class="break"></div>
-      <img src="/images/plain-white-logo.webp" 
+      <img lazy="/images/plain-white-logo.webp" 
         id="footerLogo" 
         alt="HighKey LowKey White Logo" 
         width="35px" height="35px" 
