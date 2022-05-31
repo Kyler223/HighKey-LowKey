@@ -19,7 +19,7 @@
       rel="preload"
       as="image">
     <!-- fonts -->
-    <link href="/fonts/lemon_milk_font/LEMONMILK-Regular.otf" 
+    <link href="/fonts/optimized-fonts/LEMONMILK-Regular-optimized.woff2" 
       rel="preload" 
       as="font" 
       crossorigin>
@@ -75,7 +75,8 @@
 
       :root {
         --nav-height: 100px;
-        --pink-backgrond: #f4c5cd; 
+        --pink-backgrond: #f4c5cd;
+        --lemon-milk: "lemon-milk-optimized", "lemon-milk", Helvetica;
       }
       @media screen and (max-width: 800px){
         .featured-section h2 {
@@ -176,7 +177,7 @@
       </header>
       <main>
         <section class="featured-section">
-          <h2 style="margin-top: 50px;font-family: 'lemon-milk';
+          <h2 style="margin-top: 50px;font-family: var(--lemon-milk);
             font-size: 3rem;text-align: center;font-weight: bold;">
             Featured Products
           </h2>

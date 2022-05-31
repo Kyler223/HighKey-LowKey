@@ -16,6 +16,11 @@
     <link href="../home-styles.css" rel="stylesheet" type="text/css">
     <link href="loading.css" rel="stylesheet" type="text/css">
     <link href="spin.css" rel="stylesheet" type="text/css">
+    <!-- fonts -->
+    <link href="/fonts/optimized-fonts/LEMONMILK-Regular-optimized.woff2" 
+      rel="preload" 
+      as="font" 
+      crossorigin>
     <!-- favicon -->
     <link href="../images/favicons/apple-touch-icon.png" 
       rel="apple-touch-icon" 
@@ -65,6 +70,7 @@
       :root {
         --nav-height: 100px;
         --pink-backgrond: hsl(350, 20%, 86.5%);
+        --lemon-milk: "lemon-milk-optimized", "lemon-milk", Helvetica;
       }
       @media screen and (max-width: 800px){
         .featured-section h2 {
@@ -168,7 +174,7 @@
       </header>
       <main>
         <section class="featured-section">
-          <h2 style="margin-top: 50px;font-family: 'lemon-milk';
+          <h2 style="margin-top: 50px;font-family: var(--lemon-milk);
             font-size: 3rem;text-align: center;font-weight: bold;">
             Featured Products
           </h2>
