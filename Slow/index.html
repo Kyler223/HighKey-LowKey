@@ -17,7 +17,7 @@
     <link href="loading.css" rel="stylesheet" type="text/css">
     <link href="spin.css" rel="stylesheet" type="text/css">
     <!-- fonts -->
-    <link href="/fonts/optimized-fonts/LEMONMILK-Regular-optimized.woff2" 
+    <link href="/fonts/lemon_milk_font/LEMONMILK-Regular.otf" 
       rel="preload" 
       as="font" 
       crossorigin>
@@ -37,25 +37,12 @@
     <link href="../images/favicons/site.webmanifest" 
       rel="manifest" 
       crossorigin="use-credentials">
+    <!-- stylesheets -->
+    <link rel="preload" href="../styles-actions.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="../styles-actions.css"></noscript>
     <!-- javascript -->
-    <script>
-      //after page loads
-      window.addEventListener("load", function(){
-          var scriptSrcs = 
-          ["loading.js", "../script.js", "/lazy-load.js"];
-          for (var i = 0; i < scriptSrcs.length; i++) {
-              var element = document.createElement("script");
-              element.src = scriptSrcs[i];
-              element.type = "text/javascript";
-              document.body.appendChild(element);
-          }
-          var link = document.createElement('link');
-          link.href = '../styles-actions.css';
-          link.rel = 'stylesheet';
-          link.type = 'text/css';
-          document.head.appendChild(link);
-      });
-    </script>
+    <script src="loading.js" type="text/javascript" defer></script>
+    <script src="../script.js" type="text/javascript" defer></script>
       <noscript>
         <style>
             .reveal {
@@ -64,13 +51,19 @@
         </style>
     </noscript>
     <style>
+      @font-face {
+          font-display: swap;
+          font-family: "lemon-milk";
+          src: url("/fonts/lemon_milk_font/LEMONMILK-Regular.otf") 
+            format("opentype");
+      }
       img {
         display: none;
       }
       :root {
         --nav-height: 100px;
         --pink-backgrond: hsl(350, 20%, 86.5%);
-        --lemon-milk: "lemon-milk-optimized", "lemon-milk", Helvetica;
+        --lemon-milk: "lemon-milk", Helvetica;
       }
       @media screen and (max-width: 800px){
         .featured-section h2 {
@@ -194,10 +187,10 @@
               <h3>High Heeled Sandal</h3>
               <p>$40</p>
               <div class="center-img">
-                <img lazy="../images/pexels-evg-kowalievska-4088468.webp" 
+                <img src="../images/pexels-evg-kowalievska-4088468.webp" 
                   alt="High Heeled Sandal" 
                   loading="lazy"
-                  srcset-lazy="../images/pexels-evg-kowalievska-4088468-small.webp 480w"
+                  srcset="../images/pexels-evg-kowalievska-4088468-small.webp 480w"
                 />
               </div>
             </div>
@@ -205,10 +198,10 @@
               <h3>Tank Top</h3>
               <p>$20</p>
               <div class="center-img">
-                <img lazy="../images/pexels-elias-de-carvalho-1375849.webp" 
+                <img src="../images/pexels-elias-de-carvalho-1375849.webp" 
                   alt="Tank Top" 
                   loading="lazy"
-                  srcset-lazy="../images/pexels-elias-de-carvalho-1375849-small.webp 480w"
+                  srcset="../images/pexels-elias-de-carvalho-1375849-small.webp 480w"
                 />
               </div>
             </div>
@@ -216,10 +209,10 @@
               <h3>Leather Jacket</h3>
               <p>$180</p>
               <div class="center-img">
-                <img lazy="../images/pexels-anastasiya-lobanovskaya-1035685.webp" 
+                <img src="../images/pexels-anastasiya-lobanovskaya-1035685.webp" 
                   alt="Leather Jacket" 
                   loading="lazy"
-                  srcset-lazy="../images/pexels-anastasiya-lobanovskaya-1035685-small.webp 480w"
+                  srcset="../images/pexels-anastasiya-lobanovskaya-1035685-small.webp 480w"
                 />
               </div>
             </div>
@@ -227,10 +220,10 @@
               <h3>Sunglasses</h3>
               <p>$20</p>
               <div class="center-img">
-                <img lazy="../images/pexels-ali-pazani-2584269.webp" 
+                <img src="../images/pexels-ali-pazani-2584269.webp" 
                   alt="Sunglasses" 
                   loading="lazy"
-                  srcset-lazy="../images/pexels-ali-pazani-2584269-small.webp 480w"
+                  srcset="../images/pexels-ali-pazani-2584269-small.webp 480w"
                 />
               </div>
             </div>
@@ -238,17 +231,17 @@
               <h3>Crewneck Sweatshirt</h3>
               <p>$35</p>
               <div class="center-img">
-                <img lazy="../images/pexels-pixabay-206434.webp" 
+                <img src="../images/pexels-pixabay-206434.webp" 
                   alt="Crewneck Sweatshirt" 
                   loading="lazy"
-                  srcset-lazy="../images/pexels-pixabay-206434-small.webp 480w"
+                  srcset="../images/pexels-pixabay-206434-small.webp 480w"
                 />
               </div>
             </div>
           </div>
         </section>
       <figure class="mid-banner">
-          <img lazy="../images/pexels-vinicius-wiesehofer-1090387.webp" 
+          <img src="../images/pexels-vinicius-wiesehofer-1090387.webp" 
             alt="woman wearing earrings" 
             loading="lazy" 
             width="100%" height="400px" 
@@ -284,7 +277,7 @@
         <h4>Social Media</h4>
         <a href="https://github.com/Kyler223" target="_blank">
           <div class="footer-icon-text-div">
-            <img lazy="/images/facebook-square.svg" 
+            <img src="/images/facebook-square.svg" 
               class="icons" 
               width="22px" height="22px" 
               loading="lazy" 
@@ -297,7 +290,7 @@
         </a>
         <a href="https://github.com/Kyler223" target="_blank">
           <div class="footer-icon-text-div">
-            <img lazy="/images/twitter-square.svg" 
+            <img src="/images/twitter-square.svg" 
               class="icons" 
               width="22px" height="22px" 
               loading="lazy" 
@@ -317,7 +310,7 @@
           target="_blank">
           <p>1234 Street Ave, City, State 12345</p>
           <div class="footer-icon-text-div">
-            <img lazy="/images/location-dot.svg" 
+            <img src="/images/location-dot.svg" 
               class="icons" 
               width="22px" height="22px" 
               loading="lazy" 
@@ -328,7 +321,7 @@
         </a>
       </div>
       <div class="break"></div>
-      <img lazy="/images/plain-white-logo.webp" 
+      <img src="/images/plain-white-logo.webp" 
         id="footerLogo" 
         alt="HighKey LowKey White Logo" 
         width="35px" height="35px" 
